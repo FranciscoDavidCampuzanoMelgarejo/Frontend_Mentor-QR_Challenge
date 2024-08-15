@@ -1,0 +1,68 @@
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500:  hsl(216, 15%, 48%);
+    --slate-900:  hsl(218, 44%, 22%);
+    --paragraph-font_size: 15px;
+    --weight-normal: 400;
+    --weight-bold: 700;
+}
+
+body,p,h1,h2,h3,h4,h5,h6 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--slate-300);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 325px;
+    width: 90%;
+    background-color: var(--white-color);
+    border-radius: 20px;
+}
+
+.container .container-img {
+    margin: 12px auto 18px;
+    width: 90%;
+}
+
+.container .container-img > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+
+.container .container-text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container .container-text > h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    font-weight: var(--weight-bold);
+    color: var(--slate-900);
+}
+
+.container .container-text > p {
+    font-size: var(--paragraph-font_size);
+    font-weight: var(--weight-normal);
+    color: var(--slate-500);
+}
+
+@media screen and (max-width: 345px) {
+    .container .container-text {
+        width: 90%;
+    }
+}
